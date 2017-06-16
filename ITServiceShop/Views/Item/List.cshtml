@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Items>
+
+@foreach (var item in Model)
+{
+    <div>
+        <div>@item.itmId</div>
+        <div>@item.itmModel</div>
+        <div>@item.itmDescription</div>
+        <div>@item.itmCategory</div>
+    </div>
+}
+

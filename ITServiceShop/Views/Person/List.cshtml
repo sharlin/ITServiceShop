@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Person>
+
+@foreach (var person in Model)
+{
+    <div>
+        <div>@person.BusinessEntityID</div>
+        <div>@person.FirstName</div>
+    </div>
+}
+
