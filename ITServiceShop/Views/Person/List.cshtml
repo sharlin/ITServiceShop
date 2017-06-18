@@ -1,10 +1,39 @@
 ﻿@model IEnumerable<Person>
 
-@foreach (var person in Model)
-{
-    <div>
-        <div>@person.BusinessEntityID</div>
-        <div>@person.FirstName</div>
-    </div>
-}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>BusinessEntityID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>PersonType</th>
+            <th>NameStyle</th>
+            <th>Title</th>
+            <th>AdditionalContactInfo</th>
+            <th>rowguid</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        {
+            <tr>
+                <td>@person.BusinessEntityID</td>
+                <td>@person.FirstName</td>
+                <td>@person.LastName</td>
+                <td>@person.PersonType</td>
+                <td>@person.NameStyle</td>
+                <td>@person.Title</td>
+                <td>@person.AdditionalContactInfo</td>
+                <td>@person.rowguid</td>
+
+            </tr>
+
+        }
+        <tr></tr>
+    </tbody>
+</table>
+
+
+
 
